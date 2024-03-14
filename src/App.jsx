@@ -1,34 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css';
+import { ImSpinner4 } from "react-icons/im";
+import { ImSpinner2, ImSpinner9  } from "react-icons/im";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='main-container'>
+      <h1>React Calculator</h1>
+      <div className="spinner-container">
+        <span className='spinner'><ImSpinner4  /></span>
+        <p>Updating on progess</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <h3>Display soon <span className='fadeIn-1'>.</span><span className='fadeIn-2'>.</span><span className='fadeIn-3'>.</span></h3>
+    </div>
   )
 }
 
